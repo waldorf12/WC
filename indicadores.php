@@ -1,33 +1,8 @@
 <?php
 
+include 'LibSesiones.php';
+include 'NavigationBar.php';
 
-
-session_start();
-
-
-	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-
-	} else {
-	      header('Location: Error.php');
-          session_destroy();
-
-	exit;
-	}
-	$now = time();
-  $expiracion = 0;
-  $expiracion = $_SESSION['expire'];
-
-  // echo "$now";
-  // echo "<br>";
-  // echo "$expiracion";
-
-	if($now > $_SESSION['expire']) {
-	session_destroy();
-
-     header('Location: TiempoAgotado.html');
-       session_destroy();
-	exit;
-	}
 date_default_timezone_set('America/Chihuahua');
 	$hoy = date("Y/m/d");
 	$hora = date("H:i");
@@ -39,7 +14,7 @@ date_default_timezone_set('America/Chihuahua');
 	$hora2 = $hora+1;
 	$hora2 = $hora2.':00';
 
-include 'header.php';
+
 
 	?>
 
@@ -90,7 +65,7 @@ include 'header.php';
 
 					<!-- Nav -->
 					<nav id="nav">
-				<?php echo $Header; ?>
+				<?php echo $Nav; ?>
 					</nav>
 
 				</div>

@@ -1,8 +1,12 @@
 <?php
+
+
+
+
 $nombre = $_SESSION['username'];
 $Nivel= $_SESSION['nivel'];
 
-  $Header = '<ul>
+  $Nav = '<ul>
     <li>
       <a href="PanelControl.php">INICIO</a>
     </li>
@@ -15,7 +19,7 @@ $Nivel= $_SESSION['nivel'];
         <li><a href="UbicacionesNeutrales.php">Sanitarios Votados Neutrales</a></li>
         <li><a href="TodosVotos.php">Todos los Votos</a></li>
           <li><a href="Visuales.php">Visuales</a></li>
-          
+
       </ul>
     </li>
     <li class="break"><a href="ModificarPerfil.php?Accion=3">PERFIL</a></li>

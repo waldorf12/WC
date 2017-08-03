@@ -3,6 +3,8 @@
  $Mensaje  =  $_GET['Voto'];
 
 
+
+
  ?>
 
 <!DOCTYPE HTML>

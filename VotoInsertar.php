@@ -16,19 +16,19 @@ $IdEstatus = $_GET['Estatus'];
 
 $FechaHora = $hoy.' '.$hora;
 
-
-echo $hoy;
-echo " | ";
-echo $hora;
-echo " | ";
-echo $IdEdificio;
-echo " | ";
-echo $IdUbicacion;
-echo " | ";
-echo $IdGenero;
-echo " | ";
-echo $IdEstatus;
-echo " | ";
+//
+// echo $hoy;
+// echo " | ";
+// echo $hora;
+// echo " | ";
+// echo $IdEdificio;
+// echo " | ";
+// echo $IdUbicacion;
+// echo " | ";
+// echo $IdGenero;
+// echo " | ";
+// echo $IdEstatus;
+// echo " | ";
 
 
 $query = 'INSERT INTO movcregistrovotos( IdEdificio, IdUbicacion, IdGenero,IdEstatus, FechaRegistro, HoraRegistro,FechaHora) VALUES ('.$IdEdificio.','.$IdUbicacion.','.$IdGenero.','.$IdEstatus.' ,"'.$hoy.'","'.$hora.'","'.$FechaHora.'")';
